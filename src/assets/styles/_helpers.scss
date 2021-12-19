@@ -1,0 +1,58 @@
+.d {
+  &-flex {
+    display: flex;
+  }
+}
+
+.m {
+  $sizes: 2, 3, 4, 5, 6, 7, 8, 10, 12, 14, 15, 16, 18, 20, 22, 24, 30, 32, 35, 40, 43, 50, 100, 0;
+
+  @each $size in $sizes {
+    &-#{$size} {
+      margin: #{$size}px !important;
+    }
+
+    &t-#{$size} {
+      margin-top: #{$size}px !important;
+    }
+
+    &t-n#{$size} {
+      margin-top: -#{$size}px !important;
+    }
+
+    &b-#{$size} {
+      margin-bottom: #{$size}px !important;
+    }
+
+    &b-n#{$size} {
+      margin-bottom: -#{$size}px !important;
+    }
+
+    &l-#{$size} {
+      margin-left: #{$size}px !important;
+    }
+
+    &l-n#{$size} {
+      margin-left: -#{$size}px !important;
+    }
+
+    &r-#{$size} {
+      margin-right: #{$size}px !important;
+    }
+
+    &x-#{$size} {
+      margin-left: #{$size}px !important;
+      margin-right: #{$size}px !important;
+    }
+
+    &x-n#{$size} {
+      margin-left: -#{$size}px !important;
+      margin-right: -#{$size}px !important;
+    }
+
+    &y-#{$size} {
+      margin-top: #{$size}px !important;
+      margin-bottom: #{$size}px !important;
+    }
+  }
+}
