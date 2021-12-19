@@ -10,7 +10,7 @@ const App = () => {
       <div className="header" onClick={() => setPageNum(null)}>
         <div
           style={{
-            width: '80px',
+            minWidth: '80px',
             textAlign: 'center',
             visibility: pageNum !== null ? 'visible' : 'hidden',
           }}
